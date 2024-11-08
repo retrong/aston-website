@@ -38,8 +38,8 @@ const Navbar = () => {
             src="/astonlogo.png"
             alt="Aston logo"
             className="w-28 h-auto object-contain"
-            width={60}
-            height={30}
+            width={500}
+            height={500}
           />
         </Link>
 

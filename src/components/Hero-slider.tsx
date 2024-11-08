@@ -77,8 +77,9 @@ const HeroSlider = () => {
             <Image
               src={slide.image}
               alt={slide.caption}
-              className=" object-cover"
+              className=" object-cover backdrop-blur-lg bg-white/60"
               layout="fill"
+              loading="lazy"
             />
             {/* <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">

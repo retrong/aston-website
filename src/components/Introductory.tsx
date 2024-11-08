@@ -11,8 +11,8 @@ const Introduction = () => {
           src="/astonlogo.png"
           alt="Aston logo"
           className="w-28 h-auto object-contain"
-          width={60}
-          height={30}
+          width={500}
+          height={500}
         />
         <h2 className="sm:text-4xl text-2xl font-semibold text-white mb-2 mt-2">
           Aston Homes
