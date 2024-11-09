@@ -7,8 +7,18 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="h-[30rem] rounded-md flex flex-col antialiased bg-[#f5fbfb] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
+      className=" py-10 rounded-md flex flex-col antialiased bg-[#f5fbfb] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
     >
+      <div className="w-full flex flex-col max-w-4xl text-center py-6 mb-5">
+        <h2 className="text-4xl font-semibold text-black mb-2 uppercase">
+          Testimonials
+        </h2>
+        <p className="text-lg font-medium text-secondary">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quod
+          sequi voluptatem, aliquam eveniet dolor excepturi laudantium harum
+          itaque molestiae?
+        </p>
+      </div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

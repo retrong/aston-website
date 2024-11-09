@@ -9,7 +9,20 @@ export default function FeaturesSection() {
   const isInView = useInView(ref, { once: true }); // Trigger the animation only once when in view
 
   return (
-    <section id="features" className="w-full py-10 bg-gray-100">
+    <section id="features" className="w-full flex flex-col justify-center items-center py-10 bg-gray-100">
+      <div className="w-full flex flex-col max-w-4xl text-center py-10 mb-5">
+        <h2 className="text-xl font-semibold text-secondary mb-2 uppercase">
+          features
+        </h2>
+        <h3 className="text-5xl font-medium text-black mb-2 capitalize">
+          Features
+        </h3>
+        <p className="text-lg font-medium text-secondary">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quod
+          sequi voluptatem, aliquam eveniet dolor excepturi laudantium harum
+          itaque molestiae?
+        </p>
+      </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-10 space-x-0 justify-between px-4 md:gap-0 gap-y-8">
         {/* Text on the left */}
         <motion.div
