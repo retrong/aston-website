@@ -9,15 +9,15 @@ export default function FeaturesSection() {
   const isInView = useInView(ref, { once: true }); // Trigger the animation only once when in view
 
   return (
-    <section id="features" className="w-full py-20 bg-gray-100">
-      <div className="container mx-auto flex items-center justify-between pl-6">
+    <section id="features" className="w-full py-10 bg-gray-100">
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-10 space-x-0 justify-between px-4 md:gap-0 gap-y-8">
         {/* Text on the left */}
         <motion.div
           ref={ref}
           initial={{ x: "-100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "-100%" }} // Slide in to the normal position
           transition={{ duration: 1 }}
-          className="w-1/2"
+          className="md:w-1/2 w-full"
         >
           <h2 className="text-2xl font-medium text-secondary mb-2 uppercase">
             <strong>Aston</strong> Features
@@ -42,7 +42,7 @@ export default function FeaturesSection() {
 
         {/* Image on the right */}
         <motion.div
-          className="w-1/2 shadow-2xl"
+          className="md:w-1/2 w-full shadow-2xl"
           ref={ref}
           initial={{ x: "100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "100%" }} // Slide in to the normal position
@@ -52,6 +52,7 @@ export default function FeaturesSection() {
             src="/hero-img1.jpg" // Replace with your image path
             alt="Feature"
             className="w-full h-auto rounded-lg shadow-lg"
+            loading="lazy"
           />
         </motion.div>
       </div>

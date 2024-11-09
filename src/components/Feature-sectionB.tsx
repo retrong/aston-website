@@ -10,29 +10,30 @@ export default function FeaturesSectionB() {
 
   return (
     <section className="w-full py-10 bg-gray-100">
-      <div className="container mx-auto flex items-center space-x-10 justify-between px-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-10 space-x-0 justify-between px-4 md:gap-0 gap-y-8">
         {/* Image */}
         <motion.div
-          className="w-1/2 shadow-2xl"
+          className="md:w-1/2 w-full shadow-2xl"
           ref={ref}
-          initial={{ x: "-100%" }} // Initially off-screen to the left
-          animate={{ x: isInView ? 0 : "100%" }} // Slide in to the normal position
+          initial={{ x: "100%" }} // Initially off-screen to the left
+          animate={{ x: isInView ? 0 : "-100%" }} // Slide in to the normal position
           transition={{ duration: 1 }}
         >
           <img
             src="/hero-img2.jpg" // Replace with your image path
             alt="Feature"
             className="w-full h-auto rounded-lg shadow-lg"
+            loading="lazy"
           />
         </motion.div>
 
         {/* Text on the left */}
         <motion.div
           ref={ref}
-          initial={{ x: "100%" }} // Initially off-screen to the left
-          animate={{ x: isInView ? 0 : "-100%" }} // Slide in to the normal position
+          initial={{ x: "-100%" }} // Initially off-screen to the left
+          animate={{ x: isInView ? 0 : "100%" }} // Slide in to the normal position
           transition={{ duration: 1 }}
-          className="w-1/2"
+          className="md:w-1/2 w-full"
         >
           <h2 className="text-2xl font-medium text-secondary mb-2 uppercase">
             <strong>Aston</strong> Features

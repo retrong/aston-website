@@ -14,12 +14,15 @@ export default function Home() {
     <div className="w-full">
       <div className="relative">
         <HeroSlider/>
-        <div className="md:absolute relative md:-bottom-[30rem] lg:-bottom-64 sm:bottom-20 bottom-20 md:z-[50] z-0 w-full">
+        <div className="md:absolute relative md:-bottom-[35rem] lg:-bottom-64 sm:bottom-20 bottom-0 md:z-[50] z-0 w-full">
           <ServiceCard/>
         </div>
       </div>
-      <div className="relative mt-[20rem]">
-        <Introduction/>
+      <div className="relative md:mt-[35rem] lg:mt-[18rem] mt-[0rem] sm:mt-[0rem]">
+        <div className="px-6">
+          <Introduction/>
+
+        </div>
         <FeaturesSection/>
         <FeaturesSectionB/>
         <ProductCards />

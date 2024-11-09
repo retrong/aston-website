@@ -4,7 +4,7 @@ import CustomButton from "./Buttons";
 
 const Introduction = () => {
   return (
-    <section id="about" className="flex flex-col lg:flex-row items-center justify-between bg-[#49546a] rounded-3xl sm:py-8 py-6 sm:px-12 px-8 max-w-6xl mx-auto mt-10 mb-5 shadow-lg">
+    <section id="about" className="flex flex-col lg:flex-row items-center justify-between bg-[#49546a] rounded-3xl sm:py-8 py-6 sm:px-12 px-8 max-w-6xl mx-auto sm:mt-10 mt-5 mb-5 shadow-lg">
       {/* Text Content */}
       <div className="text-center lg:text-left lg:w-2/3 mb-6 lg:mb-0">
         <Image
@@ -26,7 +26,7 @@ const Introduction = () => {
       </div>
 
       {/* Button */}
-      <div className="flex justify-center lg:justify-start w-full lg:w-auto">
+      <div className="flex justify-center lg:justify-start md:w-1/4 w-full lg:w-auto">
         <CustomButton
           size="large"
           variant="primary"
