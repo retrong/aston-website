@@ -7,7 +7,6 @@ import Introduction from "@/components/Introductory";
 import { ProductCards } from "@/components/Product-cards";
 import ServiceCard from "@/components/Service-card";
 import { Testimonials } from "@/components/Testimonial";
-import Image from "next/image";
 
 export default function Home() {
   return (
