@@ -9,8 +9,8 @@ export default function FeaturesSection() {
   const isInView = useInView(ref, { once: true }); // Trigger the animation only once when in view
 
   return (
-    <section id="features" className="w-full flex flex-col justify-center items-center py-10 bg-gray-100">
-      <div className="w-full flex flex-col max-w-4xl text-center py-10 mb-5">
+    <section id="features" className="w-full flex flex-col justify-center items-center py-10 bg-gray-100 overflow-hidden">
+      <div className="w-full flex flex-col max-w-4xl text-center py-10 mb-5 px-2">
         <h2 className="text-xl font-semibold text-secondary mb-2 uppercase">
           features
         </h2>
@@ -29,7 +29,7 @@ export default function FeaturesSection() {
           ref={ref}
           initial={{ x: "-100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "-100%" }} // Slide in to the normal position
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           className="md:w-1/2 w-full"
         >
           <h2 className="text-2xl font-medium text-secondary mb-2 uppercase">
@@ -59,7 +59,7 @@ export default function FeaturesSection() {
           ref={ref}
           initial={{ x: "100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "100%" }} // Slide in to the normal position
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <img
             src="/hero-img1.jpg" // Replace with your image path

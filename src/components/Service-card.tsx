@@ -21,7 +21,7 @@ const Card = ({
   onButtonClick,
 }: CardProps) => {
   return (
-    <div className="border border-gray-200 rounded-lg shadow-lg p-6 bg-white max-w-[400px] mx-auto text-center flex flex-col items-center space-y-6">
+    <div className="border border-gray-200 hover:border hover:border-primary hover:transform hover:translate-y-2 rounded-lg shadow-lg p-6 bg-white max-w-[400px] mx-auto text-center flex flex-col items-center space-y-6">
       <div className="flex justify-center items-center">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
       <p className="text-gray-600 text-center">{content}</p>

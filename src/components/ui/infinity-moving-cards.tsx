@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
+import { FaQuoteLeft } from "react-icons/fa";
 
 export const InfiniteMovingCards = ({
   items,
@@ -98,7 +99,10 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-black font-normal">
+              <div className="w-full items-start justify-start mb-2">
+                <FaQuoteLeft size={46} color="#38bea6" />
+              </div>
+              <span className=" relative z-20 text-base text-black font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center gap-4">
@@ -107,7 +111,7 @@ export const InfiniteMovingCards = ({
                     <img
                       src={item.imageUrl}
                       alt={item.name}
-                      className="w-10 h-10 rounded-full object-contain shadow-md"
+                      className="w-10 h-10 rounded-full object-cover shadow-md"
                     />
                   )}
                 </div>

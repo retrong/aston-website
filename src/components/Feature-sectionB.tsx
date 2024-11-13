@@ -9,7 +9,7 @@ export default function FeaturesSectionB() {
   const isInView = useInView(ref, { once: true }); // Trigger the animation only once when in view
 
   return (
-    <section className="w-full py-10 bg-gray-100">
+    <section className="w-full py-10 bg-gray-100 overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-10 space-x-0 justify-between px-4 md:gap-0 gap-y-8">
         {/* Image */}
         <motion.div
@@ -17,7 +17,7 @@ export default function FeaturesSectionB() {
           ref={ref}
           initial={{ x: "100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "-100%" }} // Slide in to the normal position
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <img
             src="/hero-img2.jpg" // Replace with your image path
@@ -32,7 +32,7 @@ export default function FeaturesSectionB() {
           ref={ref}
           initial={{ x: "-100%" }} // Initially off-screen to the left
           animate={{ x: isInView ? 0 : "100%" }} // Slide in to the normal position
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           className="md:w-1/2 w-full"
         >
           <h2 className="text-2xl font-medium text-secondary mb-2 uppercase">

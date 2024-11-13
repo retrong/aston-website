@@ -28,6 +28,7 @@ export const Card = React.memo(
         alt={card.title}
         fill
         className="object-cover absolute inset-0"
+        loading="lazy"
       />
       <div
         className={cn(

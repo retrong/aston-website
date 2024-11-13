@@ -10,7 +10,7 @@ import { Testimonials } from "@/components/Testimonial";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <div className="relative">
         <HeroSlider/>
         <div className="md:absolute relative md:-bottom-[35rem] lg:-bottom-64 sm:bottom-20 bottom-0 md:z-[50] z-0 w-full">
